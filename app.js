@@ -11,5 +11,5 @@ app.get('/', (req, res)=>{
 });
 
 app.post('/', urlencodedParser, (req, res)=>{
-    console.log(req.body.newWord);
+    res.send("You entered : " + req.body.newWord);
 });
